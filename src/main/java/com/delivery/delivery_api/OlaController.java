@@ -10,4 +10,9 @@ public class OlaController {
     public String dizerOla(){
         return "Ola mundo";
     }
+
+    @GetMapping("/ola/{nome}")
+    public String dizerOlaNome(@PathVariable String nome){
+        return "Ola mundo " + nome + "! Seja bem vindo";
+    }
 }
