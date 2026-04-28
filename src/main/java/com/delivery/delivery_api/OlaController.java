@@ -15,4 +15,9 @@ public class OlaController {
     public String dizerOlaNome(@PathVariable String nome){
         return "Ola mundo " + nome + "! Seja bem vindo";
     }
+
+    @GetMapping("/mensagem")
+    public Mensagem getMensagem(){
+        return new Mensagem("Minha primeira mensagem", "Matheus Freitas Vieira");
+    }
 }
